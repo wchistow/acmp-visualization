@@ -8,19 +8,40 @@
 
 ### Установка:
 
+#### Windows
+
+```
+cd
+git clone https://gitflic.ru/project/wchistow/acmp-visualization.git
+pip install -r acmp-visualization\requirements.txt
+```
+
+#### Linux, macOS
+
 ```
 cd
 git clone https://gitflic.ru/project/wchistow/acmp-visualization.git
 pip install -r acmp-visualization/requirements.txt
 ```
-[Скачайте zip-архив](https://acmp.ru/download/status.7z) и распакуйте его в каталог ~/acmp-visualization (Внимание! Размер файла - 1,1 Гб).
+
+### Подготовка
+
+> Внимание! Этому коду потребуется **2,2 Гб** жесткого диска для загрузки данных.
 
 ```
-cd ~/acmp-visualization
+cd acmp-visualization
 python sort.py  # Займет некоторое количество времени.
 ```
 
 ### Запуск
+
+#### Windows
+
+```
+python -m notebook
+```
+
+#### Linux, macOS
 
 ```
 jupyter notebook
